@@ -40,13 +40,20 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="studentEmail">Tên sinh viên:</label>
+                    <label for="studentEmail">Email:</label>
                     <input
                       type="email"
                       id="studentEmail"
                       class="form-control"
                     />
                     <small id="errorEmail" class="text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="studentPhone">Số điện thoại:</label>
+                    <input type="text" id="studentPhone" class="form-control" />
+                    <small id="errorPhone" class="text-danger"></small>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -58,14 +65,25 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="pointTraining">Điểm rèn luyện:</label>
+                    <input
+                      type="text"
+                      id="pointTraining"
+                      class="form-control"
+                    />
+                    <small id="pointTraining" class="text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-md-4">
                   <div class="form-group">
                     <label for="pointMath">Điểm toán:</label>
                     <input type="text" id="pointMath" class="form-control" />
                     <small id="pointMath" class="text-danger"></small>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="form-group">
                     <label for="pointPhysical">Điểm lý:</label>
                     <input
@@ -76,7 +94,7 @@
                     <small id="pointPhysical" class="text-danger"></small>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="form-group">
                     <label for="pointChemistry">Điểm hóa:</label>
                     <input
@@ -85,17 +103,6 @@
                       class="form-control"
                     />
                     <small id="pointChemistry" class="text-danger"></small>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="pointTraining">Điểm rèn luyện:</label>
-                    <input
-                      type="text"
-                      id="pointTraining"
-                      class="form-control"
-                    />
-                    <small id="pointTraining" class="text-danger"></small>
                   </div>
                 </div>
                 <div class="col-md-12">
@@ -139,5 +146,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- Main Javascript -->
+    <script src="./models/Student.js"></script>
+    <script src="./controllers/main.js"></script>
   </body>
 </html>
