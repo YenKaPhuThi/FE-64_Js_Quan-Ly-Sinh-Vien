@@ -20,6 +20,7 @@
   <body>
     <div class="bg-light vh-100 py-4">
       <div class="container">
+        <h1>Quản lý sinh viên</h1>
         <form action="">
           <div class="card">
             <div class="card-body">
@@ -127,6 +128,22 @@
             </div>
           </div>
         </form>
+        <table class="table mt-5">
+          <thead>
+            <tr>
+              <th>Mã sinh viên</th>
+              <th>Tên sinh viên</th>
+              <th>Loại sinh viên</th>
+              <th>Điểm trung bình</th>
+              <th>Xếp loại</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
       </div>
     </div>
     <!-- Optional JavaScript -->
@@ -144,6 +161,12 @@
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Axios to connect to BE -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
       crossorigin="anonymous"
     ></script>
     <!-- Main Javascript -->
